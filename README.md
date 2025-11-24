@@ -28,7 +28,7 @@
 ### 📈 stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=utkarsh-sonawane&show_icons=true&theme=radical" alt="utkarsh-sonawane's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=sonawaneutkarsh&show_icons=true&theme=radical" alt="sonawaneutkarsh's GitHub Stats" />
 </p>
 
 
@@ -37,7 +37,7 @@
 ### 🧠 top languages
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=utkarsh-sonawane&layout=compact&theme=radical" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sonawaneutkarsh&layout=compact&theme=radical" />
 </p>
 
 ---
