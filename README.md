@@ -28,16 +28,15 @@
 ### 📈 stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sonawaneutkarsh&show_icons=true&theme=radical" alt="sonawaneutkarsh's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=sonawaneutkarsh&show_icons=true&theme=radical&cache_seconds=86400" />
 </p>
-
 
 ---
 
 ### 🧠 top languages
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sonawaneutkarsh&layout=compact&theme=radical" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sonawaneutkarsh&layout=compact&theme=radical&cache_seconds=86400" />
 </p>
 
 ---
