@@ -21,13 +21,22 @@
 ### 🔗 connect
 <p align="center">
   <a href="https://www.linkedin.com/in/utkarsh-sonawane-0aa993280/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white&v=1" />
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+         width="28"
+         height="28"
+         style="filter: invert(32%) sepia(95%) saturate(749%) hue-rotate(176deg) brightness(92%) contrast(92%);" />
   </a>
+  &nbsp;&nbsp;
   <a href="https://discord.com/users/nottekcrec" target="_blank">
-    <img src="https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white" />
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg"
+         width="28"
+         height="28" />
   </a>
+  &nbsp;&nbsp;
   <a href="mailto:uvs5044@psu.edu" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" />
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg"
+         width="28"
+         height="28" />
   </a>
 </p>
 
