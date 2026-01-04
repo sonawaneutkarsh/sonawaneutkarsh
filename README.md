@@ -21,7 +21,7 @@
 ### 🔗 connect
 <p align="center">
   <a href="https://www.linkedin.com/in/utkarsh-sonawane-0aa993280/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" />
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white&v=1" />
   </a>
   <a href="https://discord.com/users/nottekcrec" target="_blank">
     <img src="https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white" />
