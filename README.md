@@ -2,9 +2,8 @@
 <h3 align="center">CS student focused on ML — building things end to end</h3>
 
 <p align="center">
-  🎓 CS (Honors) @ Pennsylvania State University, Harrisburg &nbsp;·&nbsp; Class of 2028<br/>
+  🎓 Honors CS @ Pennsylvania State University, Harrisburg &nbsp;·&nbsp; Class of 2028<br/>
   🔭 Currently building ML-focused projects and prepping for research/internship applications<br/>
-  🤝 Member, BU1LD (Microsoft-affiliated ML research & startup hub)
 </p>
 
 ---
