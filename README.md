@@ -40,8 +40,7 @@ Advanced to the final round of the USAII Global AI Hackathon out of 6,081 global
 
 ## Currently Building
 
-- **VOYAGER-9** — deep-space probe signal-recovery interface, built for the Codédex Remix Challenge
-- **Hatchling** — competition submission, details once judging wraps
+- none as of august 2026, focusing on acing classes ;)
 
 Private until release — happy to walk through either in an interview or on request.
 
@@ -54,8 +53,4 @@ Private until release — happy to walk through either in an interview or on req
 **ML / Data:** Gemini API · sentence-transformers · pgvector · RAG pipelines
 **Hardware:** ESP32 · Arduino
 
----
-
-## Contact
-
-[GitHub](https://github.com/sonawaneutkarsh) · [LinkedIn](https://www.linkedin.com/in/sonawaneutkarsh/)
+Discord- nottekcrec
