@@ -1,58 +1,61 @@
-<h1 align="center">Utkarsh Sonawane</h1>
-<h3 align="center">CS student focused on ML — building things end to end</h3>
+# Utkarsh Sonawane
 
-<p align="center">
-  🎓 Honors CS @ Pennsylvania State University, Harrisburg &nbsp;·&nbsp; Class of 2028<br/>
-  🔭 Currently building ML-focused projects and prepping for research/internship applications<br/>
-</p>
+**ML-focused engineer** — building AI systems end to end: custom evolutionary algorithms, RAG retrieval pipelines, and deployed applications.
 
----
+Honors CS @ Penn State Harrisburg · Class of 2028<br/>
+USAII Global AI Hackathon 2026 — Finalist (6,081 global participants)
 
-### 🛠 langs & tools
-
-![python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![react](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![node](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![sql](https://img.shields.io/badge/SQL-003B57?style=flat&logo=databricks&logoColor=white)
-![numpy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-![pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![markdown](https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white)
+[GitHub](https://github.com/sonawaneutkarsh) · [LinkedIn](https://www.linkedin.com/in/sonawaneutkarsh/)
 
 ---
 
-### 📌 featured projects
+## Highlights
 
-**[MedClarity](https://github.com/sonawaneutkarsh/MedClarity)** — React + Express app that uses the Gemini API to help people understand their medical documents.
-
-**[ESP32 Soil Moisture Monitor](https://github.com/sonawaneutkarsh)** — IoT soil moisture monitoring built on an ESP32.
-
-**[ZorabiHealth](https://github.com/ZorabiHealth/ZorabiHealth)** — collaborative build from a health-tech hackathon.
+| **184** | **4** | **6,081** | **1,000+** |
+|---|---|---|---|
+| automated tests in Clage | benchmark problems: OR · AND · XOR · sin | USAII Global AI Hackathon participants | government schemes normalized in the hackathon pipeline |
 
 ---
 
-### 🚧 currently building (private until release)
+## Featured Projects
 
-A couple of active projects are kept private for now — one as a required condition of a competition submission, the other because I'm a collaborator on a private repo. Happy to walk through either in an interview or on request:
+| **Clage** — from-scratch NEAT engine + artificial life<br/><br/>A custom NeuroEvolution of Augmenting Topologies implementation (no `neat-python`) driving a 2D artificial-life world.<br/><br/>• Genome, mutation, crossover, speciation, and innovation ledger built from scratch<br/>• Validated on OR / AND / XOR / sin benchmarks with **184 automated tests**<br/>• Config-driven one-factor-at-a-time experiments across 6 environments<br/>• Behavioral-diversity metrics and a visualization layer (world replay, network inspector)<br/><br/>**Tech:** Python · pytest · matplotlib<br/>**[Repository](https://github.com/sonawaneutkarsh/Clage)** |
+|---|
 
-- **VOYAGER-9** — a deep-space probe signal-recovery interface, built for the Codédex Remix Challenge
-- **Hatchling** — competition submission, details coming once judging wraps
+| **MedClarity** — agentic AI over medical documents<br/><br/>A React + Express app using the Gemini API to research across medical documents and answer questions with full page-level citations.<br/><br/>• Answers with page-level citations; spots trends and flags discrepancies<br/>• Full-stack TypeScript: React SPA + Express API + Gemini integration<br/>• Deployed to Vercel — live demo<br/><br/>**Tech:** TypeScript · React · Node/Express · Gemini API<br/>**[Repository](https://github.com/sonawaneutkarsh/MedClarity) · [Live Demo](https://medclarity-one.vercel.app)** |
+|---|
+
+| **ESP32 Soil Moisture Monitor** — end-to-end IoT<br/><br/>ESP32-C3 firmware that senses soil moisture and sends email alerts over Wi-Fi.<br/><br/>• Capacitive sensing with dry/wet calibration and 10-sample averaging<br/>• Normalized 0–100 moisture scale with configurable thresholds<br/>• Alert deduplication and SMTP email notifications over Wi-Fi<br/><br/>**Tech:** C++ · ESP32 · Arduino · SMTP<br/>**[Repository](https://github.com/sonawaneutkarsh/esp32-soil-moisture-monitor)** |
+|---|
 
 ---
 
-### 🔗 connect
+## USAII Global AI Hackathon 2026 — Finalist
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/utkarsh-sonawane-0aa993280/" target="_blank">
-    <img src="assets/linkedin.png" width="32" height="32" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://discord.com/users/nottekcrec" target="_blank">
-    <img src="assets/discord.png" width="32" height="32" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:uvs5044@psu.edu" target="_blank">
-    <img src="assets/email.png" width="32" height="32" />
-  </a>
-</p>
+Advanced to the final round of the USAII Global AI Hackathon out of 6,081 global participants, on a 5-person team building an AI system to help users compare and choose the best-fit scholarship scheme. As data engineer: built the pipeline normalizing **1,000+ scraped government schemes** into a structured schema with **gte-small vector embeddings**, and set up the **Supabase + pgvector** storage layer powering the RAG-based retrieval system.
+
+**Tech:** Python · Selenium · BeautifulSoup · Supabase · sentence-transformers · FastAPI · React
+
+---
+
+## Currently Building
+
+- **VOYAGER-9** — deep-space probe signal-recovery interface, built for the Codédex Remix Challenge
+- **Hatchling** — competition submission, details once judging wraps
+
+Private until release — happy to walk through either in an interview or on request.
+
+---
+
+## Stack
+
+**Languages:** Python · TypeScript · C++
+**Full-stack:** React · Node/Express
+**ML / Data:** Gemini API · sentence-transformers · pgvector · RAG pipelines
+**Hardware:** ESP32 · Arduino
+
+---
+
+## Contact
+
+[GitHub](https://github.com/sonawaneutkarsh) · [LinkedIn](https://www.linkedin.com/in/sonawaneutkarsh/)
