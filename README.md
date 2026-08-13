@@ -1,9 +1,9 @@
 # Utkarsh Sonawane
 
-**ML-focused engineer** — building AI systems end to end: custom evolutionary algorithms, RAG retrieval pipelines, and deployed applications.
+**CS student building AI/ML systems, algorithms, and full-stack software.**
 
-Honors CS @ Penn State Harrisburg · Class of 2028<br/>
-USAII Global AI Hackathon 2026 — Finalist (6,081 global participants)
+Honors CS @ Penn State Harrisburg · Class of 2028  
+🏆 **USAII Global AI Hackathon 2026 Finalist** · 6,081 global participants
 
 [GitHub](https://github.com/sonawaneutkarsh) · [LinkedIn](https://www.linkedin.com/in/sonawaneutkarsh/)
 
@@ -11,46 +11,163 @@ USAII Global AI Hackathon 2026 — Finalist (6,081 global participants)
 
 ## Highlights
 
-| **184** | **4** | **6,081** | **1,000+** |
-|---|---|---|---|
-| automated tests in Clage | benchmark problems: OR · AND · XOR · sin | USAII Global AI Hackathon participants | government schemes normalized in the hackathon pipeline |
+<table>
+<tr>
+<td align="center" width="25%">
+<h2>184</h2>
+<b>Automated Tests</b><br>
+Clage
+</td>
+
+<td align="center" width="25%">
+<h2>4</h2>
+<b>NEAT Benchmarks</b><br>
+OR · AND · XOR · sin
+</td>
+
+<td align="center" width="25%">
+<h2>6,081</h2>
+<b>Hackathon Participants</b><br>
+USAII Global AI Hackathon
+</td>
+
+<td align="center" width="25%">
+<h2>1,000+</h2>
+<b>Government Schemes</b><br>
+Normalized in RAG pipeline
+</td>
+</tr>
+</table>
 
 ---
 
 ## Featured Projects
 
-| **Clage** — from-scratch NEAT engine + artificial life<br/><br/>A custom NeuroEvolution of Augmenting Topologies implementation (no `neat-python`) driving a 2D artificial-life world.<br/><br/>• Genome, mutation, crossover, speciation, and innovation ledger built from scratch<br/>• Validated on OR / AND / XOR / sin benchmarks with **184 automated tests**<br/>• Config-driven one-factor-at-a-time experiments across 6 environments<br/>• Behavioral-diversity metrics and a visualization layer (world replay, network inspector)<br/><br/>**Tech:** Python · pytest · matplotlib<br/>**[Repository](https://github.com/sonawaneutkarsh/Clage)** |
-|---|
+<table>
+<tr>
+<td width="50%" valign="top">
 
-| **MedClarity** — agentic AI over medical documents<br/><br/>A React + Express app using the Gemini API to research across medical documents and answer questions with full page-level citations.<br/><br/>• Answers with page-level citations; spots trends and flags discrepancies<br/>• Full-stack TypeScript: React SPA + Express API + Gemini integration<br/>• Deployed to Vercel — live demo<br/><br/>**Tech:** TypeScript · React · Node/Express · Gemini API<br/>**[Repository](https://github.com/sonawaneutkarsh/MedClarity) · [Live Demo](https://medclarity-one.vercel.app)** |
-|---|
+### 🧬 Clage
 
-| **ESP32 Soil Moisture Monitor** — end-to-end IoT<br/><br/>ESP32-C3 firmware that senses soil moisture and sends email alerts over Wi-Fi.<br/><br/>• Capacitive sensing with dry/wet calibration and 10-sample averaging<br/>• Normalized 0–100 moisture scale with configurable thresholds<br/>• Alert deduplication and SMTP email notifications over Wi-Fi<br/><br/>**Tech:** C++ · ESP32 · Arduino · SMTP<br/>**[Repository](https://github.com/sonawaneutkarsh/esp32-soil-moisture-monitor)** |
-|---|
+**From-scratch NEAT engine + artificial life**
+
+`Python` `pytest` `matplotlib`
+
+**184 TESTS · 4 BENCHMARKS · 6 EXPERIMENTAL ENVIRONMENTS**
+
+- Custom NeuroEvolution of Augmenting Topologies implementation built without `neat-python`
+- Genome, mutation, crossover, speciation, and innovation ledger implemented from scratch
+- 2D artificial-life environment with configurable experiments
+- Behavioral-diversity metrics and visualization layer
+
+**[Repository →](https://github.com/sonawaneutkarsh/Clage)**
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🧠 MedClarity
+
+**AI-powered research across medical documents**
+
+`TypeScript` `React` `Node/Express` `Gemini API`
+
+**PAGE-LEVEL CITATIONS · DEPLOYED · FULL-STACK**
+
+- Researches across medical documents with page-level citations
+- React SPA + Express API + Gemini integration
+- Trend detection and discrepancy flags
+- Deployed application with live demo
+
+**[Repository →](https://github.com/sonawaneutkarsh/MedClarity)**  
+**[Live Demo →](https://medclarity-one.vercel.app)**
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 🌱 ESP32 Soil Moisture Monitor
+
+**End-to-end IoT sensor + automated alerts**
+
+`C++` `ESP32` `Arduino` `SMTP`
+
+**CALIBRATION · FILTERING · WI-FI · SMTP**
+
+- Capacitive soil-moisture sensing
+- Dry/wet calibration with 10-sample averaging
+- Normalized 0–100 moisture scale
+- Configurable thresholds and alert deduplication
+- Wi-Fi + SMTP email notifications
+
+**[Repository →](https://github.com/sonawaneutkarsh/esp32-soil-moisture-monitor)**
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🔬 What I Like Building
+
+Projects that combine **algorithms, AI, software engineering, and experimentation**.
+
+I prioritize understanding systems from the ground up rather than relying entirely on high-level abstractions.
+
+</td>
+</tr>
+</table>
 
 ---
 
-## USAII Global AI Hackathon 2026 — Finalist
+## 🏆 USAII Global AI Hackathon 2026
 
-Advanced to the final round of the USAII Global AI Hackathon out of 6,081 global participants, on a 5-person team building an AI system to help users compare and choose the best-fit scholarship scheme. As data engineer: built the pipeline normalizing **1,000+ scraped government schemes** into a structured schema with **gte-small vector embeddings**, and set up the **Supabase + pgvector** storage layer powering the RAG-based retrieval system.
+### Finalist · 6,081 Global Participants · 5-Person Team
 
-**Tech:** Python · Selenium · BeautifulSoup · Supabase · sentence-transformers · FastAPI · React
+Built an AI system designed to help users compare and choose the best-fit scholarship scheme.
+
+**My contribution — Data Engineering**
+
+- Normalized **1,000+ scraped government schemes** into a structured schema
+- Generated **gte-small vector embeddings**
+- Built the **Supabase + pgvector** storage and retrieval layer
+- Supported the RAG-based retrieval system
+
+**Tech:** `Python` · `Selenium` · `BeautifulSoup` · `Supabase` · `pgvector` · `sentence-transformers` · `FastAPI` · `React`
 
 ---
 
-## Currently Building
+## ⚙️ Tech Stack
 
-- none as of august 2026, focusing on acing classes ;)
+<table>
+<tr>
+<td><b>Languages</b></td>
+<td>Python · TypeScript · C++</td>
+</tr>
 
-Private until release — happy to walk through either in an interview or on request.
+<tr>
+<td><b>Full-stack</b></td>
+<td>React · Node/Express</td>
+</tr>
+
+<tr>
+<td><b>AI / ML</b></td>
+<td>Gemini API · sentence-transformers · RAG</td>
+</tr>
+
+<tr>
+<td><b>Data / Infrastructure</b></td>
+<td>Supabase · pgvector</td>
+</tr>
+
+<tr>
+<td><b>Hardware</b></td>
+<td>ESP32 · Arduino</td>
+</tr>
+</table>
 
 ---
 
-## Stack
+## Connect
 
-**Languages:** Python · TypeScript · C++
-**Full-stack:** React · Node/Express
-**ML / Data:** Gemini API · sentence-transformers · pgvector · RAG pipelines
-**Hardware:** ESP32 · Arduino
-
-Discord- nottekcrec
+[GitHub](https://github.com/sonawaneutkarsh) · [LinkedIn](https://www.linkedin.com/in/sonawaneutkarsh/)
