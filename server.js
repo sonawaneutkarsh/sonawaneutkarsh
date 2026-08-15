@@ -100,7 +100,8 @@ if (process.argv.includes("--build")) {
     res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
     res.end(renderPage());
   });
-  server.listen(port, "0.0.0.0", () => {
-    console.log(`Serving README preview on http://0.0.0.0:${port}`);
+  const host = process.env.HOST || "127.0.0.1";
+  server.listen(port, host, () => {
+    console.log(`Serving README preview on http://${host}:${port}`);
   });
 }
