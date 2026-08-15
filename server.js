@@ -103,8 +103,14 @@ if (process.argv.includes("--build")) {
 } else {
   const port = Number(process.env.PORT) || 3000;
   const server = createServer((req, res) => {
-    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-    res.end(renderPage());
+    try {
+      res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+      res.end(renderPage());
+    } catch (err) {
+      console.error(err);
+      res.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });
+      res.end("Failed to render README preview.");
+    }
   });
   const host = process.env.HOST || "127.0.0.1";
   server.listen(port, host, () => {
