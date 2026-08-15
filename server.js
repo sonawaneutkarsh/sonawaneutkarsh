@@ -91,9 +91,15 @@ ${body}
 }
 
 if (process.argv.includes("--build")) {
-  mkdirSync("dist", { recursive: true });
-  writeFileSync("dist/index.html", renderPage());
-  console.log("Built dist/index.html");
+  try {
+    mkdirSync("dist", { recursive: true });
+    writeFileSync("dist/index.html", renderPage());
+    console.log("Built dist/index.html");
+  } catch (err) {
+    console.error("Build failed.");
+    console.error(err);
+    process.exitCode = 1;
+  }
 } else {
   const port = Number(process.env.PORT) || 3000;
   const server = createServer((req, res) => {
