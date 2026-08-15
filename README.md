@@ -192,7 +192,7 @@ I prioritize understanding systems from the ground up rather than relying entire
 
 <tr>
 <td><b>AI / ML</b></td>
-<td>Gemini API · LangGraph · RAG · Local LLMs (Qwen2.5) · sentence-transformers</td>
+<td>Gemini API · LangGraph · RAG · Local LLMs · sentence-transformers</td>
 </tr>
 
 <tr>
