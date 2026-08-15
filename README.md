@@ -2,7 +2,7 @@
 
 **CS student building AI/ML systems, algorithms, and full-stack software.**
 
-Honors CS @ Penn State Harrisburg · Class of 2028  
+Honors CS @ Penn State · Class of 2028  
 🏆 **USAII Global AI Hackathon 2026 Finalist** · 6,081 global participants
 
 [GitHub](https://github.com/sonawaneutkarsh) · [LinkedIn](https://www.linkedin.com/in/sonawaneutkarsh/)
