@@ -1,0 +1,14 @@
+{
+  "name": "sonawaneutkarsh",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GitHub profile README preview for sonawaneutkarsh/sonawaneutkarsh",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "node server.js --build"
+  },
+  "devDependencies": {
+    "marked": "^18.0.9"
+  }
+}

@@ -108,6 +108,46 @@ Normalized in RAG pipeline
 
 <td width="50%" valign="top">
 
+### 🎓 ScholarAI
+
+**AI-powered discovery & comparison of government schemes**
+
+`Python` `FastAPI` `LangGraph` `React` `pgvector`
+
+**11-NODE AGENT PIPELINE · LOCAL LLM · 1,000+ SCHEMES**
+
+- LangGraph agent pipeline (11 nodes): eligibility → retrieve → compare → decide
+- pgvector hybrid search (vector + trigram + full-text) over gte-small embeddings
+- Local LLM (Qwen2.5) inference with what-if simulations and decision reports
+- Team project built for the USAII Global AI Hackathon 2026
+
+**[Repository →](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI)**
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 🐙 devvy
+
+**One Discord presence for your entire coding workflow**
+
+`TypeScript` `Node.js` `Discord RPC`
+
+**LOCAL DAEMON · VS CODE · OPENCODE · COMMAND CODE**
+
+- Single local daemon owns the Discord IPC connection; all publishers talk to it over HTTP
+- VS Code extension, OpenCode plugin, and Command Code mod publish live coding activity
+- Priority arbitration with heartbeats, TTL-based expiry, and activity dedup
+- No cloud service — only project/file basenames, language, and branch ever reach Discord
+
+**[Repository →](https://github.com/sonawaneutkarsh/devvy)**
+
+</td>
+
+<td width="50%" valign="top">
+
 ### 🔬 What I Like Building
 
 Projects that combine **algorithms, AI, software engineering, and experimentation**.
@@ -124,7 +164,7 @@ I prioritize understanding systems from the ground up rather than relying entire
 
 ### Finalist · 6,081 Global Participants · 5-Person Team
 
-Built an AI system designed to help users compare and choose the best-fit scholarship scheme.
+**ScholarAI** — an AI system that helps users discover, compare, and choose the best-fit government schemes. **[Repository →](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI)**
 
 **My contribution — Data Engineering**
 
@@ -133,7 +173,7 @@ Built an AI system designed to help users compare and choose the best-fit schola
 - Built the **Supabase + pgvector** storage and retrieval layer
 - Supported the RAG-based retrieval system
 
-**Tech:** `Python` · `Selenium` · `BeautifulSoup` · `Supabase` · `pgvector` · `sentence-transformers` · `FastAPI` · `React`
+**Tech:** `Python` · `Selenium` · `BeautifulSoup` · `FastAPI` · `LangGraph` · `Supabase` · `pgvector` · `sentence-transformers` · `React`
 
 ---
 
@@ -147,17 +187,22 @@ Built an AI system designed to help users compare and choose the best-fit schola
 
 <tr>
 <td><b>Full-stack</b></td>
-<td>React · Node/Express</td>
+<td>React · Node/Express · FastAPI · Vite</td>
 </tr>
 
 <tr>
 <td><b>AI / ML</b></td>
-<td>Gemini API · sentence-transformers · RAG</td>
+<td>Gemini API · LangGraph · RAG · Local LLMs (Qwen2.5) · sentence-transformers</td>
 </tr>
 
 <tr>
 <td><b>Data / Infrastructure</b></td>
-<td>Supabase · pgvector</td>
+<td>Supabase · pgvector · Redis · Docker</td>
+</tr>
+
+<tr>
+<td><b>Integrations</b></td>
+<td>Discord Rich Presence · VS Code · OpenCode · Command Code</td>
 </tr>
 
 <tr>
@@ -165,9 +210,3 @@ Built an AI system designed to help users compare and choose the best-fit schola
 <td>ESP32 · Arduino</td>
 </tr>
 </table>
-
----
-
-## Connect
-
-[GitHub](https://github.com/sonawaneutkarsh) · [LinkedIn](https://www.linkedin.com/in/sonawaneutkarsh/)
