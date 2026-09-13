@@ -12,9 +12,11 @@
 
 <img src="./assets/generated/hd-about.svg" width="620" alt="about"/>
 
-i'm an honors CS student at penn state, and most of the things I build start with something that i want to improve in my life. i like making software that people can use everyday, like managing my nutrition or training, upgrading my setup or automating things. Nytr, is something that i genuinely use everyday for nutrition and training decisions. 
+i'm an honors CS student at penn state, and i like building software around problems i actually have — systems i can use every day rather than one-off demos.
 
-right now, i'm working on LLMs, agentic systems and backend infrastructure. 
+Nytr started from one of those problems: penn state dining changes every day, but nutrition and training targets don't. i built it to combine Stacks Market availability, HealthKit data, food logs, and training history into deterministic daily guidance.
+
+right now, i'm going deeper into LLMs, agentic systems, backend infrastructure, and systems/performance engineering.
 
 <img src="./assets/generated/hd-stack.svg" width="620" alt="stack"/>
 
