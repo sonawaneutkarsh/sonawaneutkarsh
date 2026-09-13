@@ -22,8 +22,8 @@ right now, i'm working on LLMs, agentic systems and backend infrastructure.
 
 <img src="./assets/generated/hd-projects.svg" width="620" alt="projects"/>
 
-**[Nytr](https://github.com/sonawaneutkarsh/Nytr-Portfolio)** &nbsp;·&nbsp; <samp>python, data systems</samp><br>
-Evidence-driven nutrition and training system integrating dining data, HealthKit, and Hevy. Immutable history, deterministic analytics, and a native iOS client.
+**[Nytr](https://github.com/sonawaneutkarsh/Nytr)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/nytr) &nbsp;·&nbsp; <samp>swift, python, fastapi, postgresql</samp><br>
+Evidence-driven decision system built around Penn State Harrisburg's Stacks Market. Combines daily dining availability with HealthKit, food logs, and Hevy training history to produce deterministic meal and training guidance in a native iOS app.
 
 **[Clage](https://github.com/sonawaneutkarsh/Clage)** &nbsp;·&nbsp; <samp>python, algorithms from scratch</samp><br>
 Neuroevolution of Augmenting Topologies (NEAT) implemented from first principles in a 2D bounded simulation world. 188 unit and integration tests, zero ML library dependencies, validated against OR, AND, XOR, and sine wave benchmarks across fixed seeds.
