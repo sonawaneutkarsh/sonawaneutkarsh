@@ -28,7 +28,7 @@ right now, i'm going deeper into LLMs, agentic systems, backend infrastructure, 
 Evidence-driven decision system built around Penn State Harrisburg's Stacks Market. Combines daily dining availability with HealthKit, food logs, and Hevy training history to produce deterministic meal and training guidance in a native iOS app.
 
 **[Clage](https://github.com/sonawaneutkarsh/Clage)** &nbsp;·&nbsp; <samp>python, algorithms from scratch</samp><br>
-Neuroevolution of Augmenting Topologies (NEAT) implemented from first principles in a 2D bounded simulation world. 188 unit and integration tests, zero ML library dependencies, validated against OR, AND, XOR, and sine wave benchmarks across fixed seeds.
+Neuroevolution of Augmenting Topologies (NEAT) implemented from first principles in a 2D bounded simulation world. 300 unit and integration tests, zero ML library dependencies, validated against OR, AND, XOR, and sine wave benchmarks across fixed seeds.
 
 **[Devvy](https://github.com/sonawaneutkarsh/devvy)** &nbsp;·&nbsp; <samp>typescript, devtools</samp><br>
 Local daemon for coordinating Discord Rich Presence across developer tools. Speaks Discord's IPC protocol directly with arbitration, TTL expiry, heartbeats, and reconnect handling.
