@@ -20,21 +20,24 @@ right now, i'm going deeper into LLMs, agentic systems, backend infrastructure, 
 
 <img src="./assets/generated/hd-stack.svg" width="620" alt="stack"/>
 
-<samp>python &nbsp; typescript &nbsp; c++ &nbsp; swift &nbsp; postgresql &nbsp; pgvector &nbsp; fastapi &nbsp; node &nbsp; docker &nbsp; linux &nbsp; git</samp>
+<samp>python &nbsp; typescript &nbsp; javascript &nbsp; swift &nbsp; c++ &nbsp; postgresql &nbsp; pgvector &nbsp; fastapi &nbsp; node &nbsp; docker &nbsp; linux &nbsp; git</samp>
 
 <img src="./assets/generated/hd-projects.svg" width="620" alt="projects"/>
 
-**[Nytr](https://github.com/sonawaneutkarsh/Nytr)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/nytr) &nbsp;·&nbsp; <samp>swift, python, fastapi, postgresql</samp><br>
-Evidence-driven decision system built around Penn State Harrisburg's Stacks Market. Combines daily dining availability with HealthKit, food logs, and Hevy training history to produce deterministic meal and training guidance in a native iOS app.
+**[Nytr](https://github.com/sonawaneutkarsh/Nytr)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/nytr/) &nbsp;·&nbsp; <samp>swift, python, fastapi, postgresql · 2026</samp><br>
+Evidence-driven decision system built around Penn State Harrisburg's Stacks Market. Combines daily dining availability with HealthKit, food logs, and Hevy training history to produce deterministic meal and training guidance in a native iOS app. 1,135 backend tests (1,124 passing in CI with Postgres) · 251 iOS XCTest cases.
 
-**[Clage](https://github.com/sonawaneutkarsh/Clage)** &nbsp;·&nbsp; <samp>python, algorithms from scratch</samp><br>
-Neuroevolution of Augmenting Topologies (NEAT) implemented from first principles in a 2D bounded simulation world. 300 unit and integration tests, zero ML library dependencies, validated against OR, AND, XOR, and sine wave benchmarks across fixed seeds.
+**[Clage](https://github.com/sonawaneutkarsh/Clage)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/clage/) &nbsp;·&nbsp; <samp>python, algorithms from scratch · 2026</samp><br>
+Neuroevolution of Augmenting Topologies (NEAT) implemented from first principles, driving organisms in a 2D simulation world. No ML libraries (matplotlib is the only runtime dependency). 300 tests, passing in CI. Over 5 fixed seeds it solves OR and AND every time and XOR 4 of 5; sine regression is not solved yet.
 
-**[Devvy](https://github.com/sonawaneutkarsh/devvy)** &nbsp;·&nbsp; <samp>typescript, devtools</samp><br>
-Local daemon for coordinating Discord Rich Presence across developer tools. Speaks Discord's IPC protocol directly with arbitration, TTL expiry, heartbeats, and reconnect handling.
+**[Devvy](https://github.com/sonawaneutkarsh/devvy)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/devvy/) &nbsp;·&nbsp; <samp>javascript (node.js), discord ipc, devtools · 2026</samp><br>
+Local daemon for coordinating Discord Rich Presence across developer tools. Speaks Discord's IPC protocol directly with arbitration, TTL expiry, heartbeats, and reconnect handling. 26 test scripts, all run in CI.
 
-**[ScholarAI](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI)** &nbsp;·&nbsp; <samp>python, postgresql, pgvector</samp><br>
-Data engineering for a government-scheme discovery platform indexing 1,000+ Indian government programs. Built normalization, embeddings, and PostgreSQL/pgvector ingestion as part of a 5-person hackathon team.
+**[Talks](https://github.com/sonawaneutkarsh/Talks)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/talks/) &nbsp;·&nbsp; <samp>swift, swiftui, watchos, ios · 2026</samp><br>
+Apple Watch meeting recorder. Durable Watch-to-iPhone file transfer, on-device transcription and Apple Foundation Models summaries, then sync to Notion. 57 XCTest cases passing in CI.
+
+**ScholarAI** &nbsp;·&nbsp; [team repo](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI) &nbsp;·&nbsp; [my pipeline](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI/tree/main/data-engineering) &nbsp;·&nbsp; <samp>python, postgresql, pgvector · jun 2026</samp><br>
+Government-scheme discovery platform built by a 5-person team at the USAII Global AI Hackathon 2026; our team was a finalist among 6,081+ participants. My part was the data engineering: normalization, embeddings, and PostgreSQL/pgvector ingestion for 1,008 scraped schemes.
 
 <img src="./assets/generated/hd-languages.svg" width="620" alt="languages"/>
 

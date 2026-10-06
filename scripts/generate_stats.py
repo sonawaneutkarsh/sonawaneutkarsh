@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate profile headings and language breakdown SVGs.
+"""Generate the profile wordmark, section headings, and language chart SVGs.
 
 Inspired by Andrii Drok's profile architecture (andriidrok1/andriidrok1),
 adapted for Utkarsh Sonawane's profile.
@@ -9,8 +9,14 @@ Outputs:
   assets/generated/hd-about.svg
   assets/generated/hd-stack.svg
   assets/generated/hd-projects.svg
-  assets/generated/hd-langs.svg
-  assets/generated/langs.svg
+  assets/generated/hd-languages.svg
+  assets/generated/langs.svg   (needs GITHUB_TOKEN; live data only)
+
+The language chart uses live GitHub GraphQL data for public, non-fork repos
+owned by GH_LOGIN. Shares are of ALL language bytes, not of the top rows.
+If the API call fails, the script exits non-zero and leaves the committed
+langs.svg untouched (there is no offline snapshot). Without a token it skips
+langs.svg.
 
 No external dependencies — standard library only.
 Inlines subset JetBrains Mono (OFL) to pin advance geometry at 0.600 em.
@@ -34,20 +40,16 @@ LEFT = 34
 REVEAL = 0.95
 API = "https://api.github.com/graphql"
 
-# Verified factual snapshot across sonawaneutkarsh's 12 public non-fork repos
-FACTUAL_LANGS_BY_SIZE = [
-    ("Python", 312076),
-    ("TypeScript", 290792),
-    ("JavaScript", 156759),
-    ("Shell", 45404),
-    ("C++", 4478),
-]
-FACTUAL_LANGS_BY_REPO = [
-    ("Python", 5),
-    ("TypeScript", 3),
-    ("JavaScript", 3),
-    ("C++", 1),
-]
+TOP_N = 5
+
+# Short display names so labels fit the name column without truncation.
+DISPLAY_NAMES = {
+    "Jupyter Notebook": "jupyter",
+    "PLpgSQL": "plpgsql",
+    "Objective-C": "objc",
+    "Dockerfile": "docker",
+}
+MAX_LABEL = 11
 
 # GitHub dark and light palette
 LIGHT = dict(data="#6e7681", emph="#424a53", dim="#8c959f", rule="#d8dee4", surface="#ffffff")
@@ -246,8 +248,36 @@ def draw_heading(word):
     return "".join(p)
 
 
-def draw_langs(by_size, by_repo):
-    """Draw two-column language breakdown: by bytes share and by primary repository count."""
+def display_name(name):
+    """Lower-case display label that fits the name column (never cut mid-word)."""
+    short = DISPLAY_NAMES.get(name, name).lower()
+    return short if len(short) <= MAX_LABEL else short[: MAX_LABEL - 1] + "…"
+
+
+def format_share(val, total):
+    """Percentage of ALL bytes; '<1%' instead of a misleading '0%'."""
+    pct = val / total * 100 if total else 0.0
+    return "<1%" if 0 < pct < 1 else f"{pct:.0f}%"
+
+
+def rank_languages(by_size, by_repo, n=TOP_N):
+    """Rank languages for the chart.
+
+    by_size: {language: bytes}; by_repo: {language: repos where it is primary}.
+    Returns (size_rows, repo_rows, total_bytes). Ties in the repo column are
+    broken by total bytes, then name, so larger languages are not dropped by
+    alphabetical order.
+    """
+    total = sum(by_size.values())
+    size_rows = sorted(by_size.items(), key=lambda kv: (-kv[1], kv[0]))[:n]
+    repo_rows = sorted(
+        by_repo.items(), key=lambda kv: (-kv[1], -by_size.get(kv[0], 0), kv[0])
+    )[:n]
+    return size_rows, repo_rows, total
+
+
+def draw_langs(by_size, by_repo, total_bytes):
+    """Draw two-column language breakdown: share of all bytes and primary-language repo count."""
     rows = max(len(by_size), len(by_repo), 1)
     H = 26 + rows * 22 + 6
     colw = (WIDTH - LEFT - 30) / 2
@@ -269,16 +299,15 @@ def draw_langs(by_size, by_repo):
         if not data:
             continue
         top = max(v for _, v in data) or 1
-        total = sum(v for _, v in data) or 1
         cid = f"rl{gi}"
         clip, cursor = wipe(cid, gx + name_w, 20, bar_max, rows * 22, 0.34 + gi * 0.12, 0.95)
         p.append(clip)
         for ri, (name, val) in enumerate(data):
             y = 26 + ri * 22
-            shown = f"{val / total * 100:.0f}%" if as_pct else f"{val}"
+            shown = format_share(val, total_bytes) if as_pct else f"{val}"
             p.append(
                 f'<g opacity="0">{fade(0.24 + gi * 0.10 + ri * 0.05)}'
-                + label(gx, y + 8, name.lower()[:11], 11, "e-f")
+                + label(gx, y + 8, display_name(name), 11, "e-f")
                 + label(gx + colw - 6, y + 8, shown, 11, "m-f", "end")
                 + '</g>'
             )
@@ -306,7 +335,12 @@ def fetch_live_data(login, token):
     )
     with urllib.request.urlopen(req, timeout=15) as r:
         payload = json.load(r)
-    repos = payload.get("data", {}).get("user", {}).get("repositories", {}).get("nodes", [])
+    if payload.get("errors"):
+        raise RuntimeError(f"GraphQL errors: {payload['errors']}")
+    user = (payload.get("data") or {}).get("user")
+    if not user:
+        raise RuntimeError(f"No user data returned for {login!r}")
+    repos = user["repositories"]["nodes"]
     by_size, by_repo = {}, {}
     for node in repos:
         edges = node.get("languages", {}).get("edges", [])
@@ -317,9 +351,9 @@ def fetch_live_data(login, token):
             top_lang = edges[0]["node"]["name"]
             by_repo[top_lang] = by_repo.get(top_lang, 0) + 1
 
-    ranked_size = sorted(by_size.items(), key=lambda kv: (-kv[1], kv[0]))[:5]
-    ranked_repo = sorted(by_repo.items(), key=lambda kv: (-kv[1], kv[0]))[:5]
-    return ranked_size, ranked_repo
+    if not by_size:
+        raise RuntimeError("API returned no language data")
+    return by_size, by_repo
 
 
 def main():
@@ -346,28 +380,28 @@ def main():
             f.write(content)
         print(f"Generated {path}")
 
-    # 3. Get language data (live API if token available, else factual snapshot)
+    # 3. Language chart: live data only. No stale fallback.
     token = os.environ.get("GITHUB_TOKEN")
     login = os.environ.get("GH_LOGIN", "sonawaneutkarsh")
-    by_size, by_repo = FACTUAL_LANGS_BY_SIZE, FACTUAL_LANGS_BY_REPO
-    if token:
-        try:
-            live_size, live_repo = fetch_live_data(login, token)
-            if live_size and live_repo:
-                by_size, by_repo = live_size, live_repo
-                print("Fetched live language metrics from GitHub API.")
-        except Exception as e:
-            print(f"Notice: Using cached snapshot (API fetch failed: {e})")
-    else:
-        print("Using verified repository language metrics snapshot.")
+    if not token:
+        print("GITHUB_TOKEN not set: skipped langs.svg (committed chart left unchanged).")
+        return 0
+    try:
+        by_size, by_repo = fetch_live_data(login, token)
+    except Exception as e:
+        print(f"ERROR: language fetch failed; langs.svg left unchanged: {e}", file=sys.stderr)
+        return 1
+    size_rows, repo_rows, total = rank_languages(by_size, by_repo)
+    print("Fetched live language metrics from GitHub API.")
 
     # 4. Generate langs.svg
     langs_path = os.path.join(out_dir, "langs.svg")
-    langs_content = draw_langs(by_size, by_repo)
+    langs_content = draw_langs(size_rows, repo_rows, total)
     with open(langs_path, "w", encoding="utf-8") as f:
         f.write(langs_content)
     print(f"Generated {langs_path}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

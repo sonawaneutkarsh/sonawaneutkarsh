@@ -141,7 +141,6 @@ function renderPage(theme = "auto") {
   }
 
   /* Light theme overrides */
-  html[data-theme="light"],
   @media (prefers-color-scheme: light) {
     html:not([data-theme="dark"]) body {
       background: #ffffff;

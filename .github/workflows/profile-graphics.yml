@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: '17 5 * * *'   # daily at 05:17 UTC
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/profile-graphics.yml'
+
+permissions:
+  contents: read
 
 concurrency:
   group: profile-graphics
@@ -11,22 +20,25 @@ concurrency:
 
 jobs:
   generate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 5
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
+
+      - name: Test chart logic
+        run: python3 -m unittest discover -s tests -v
 
       - name: Generate profile graphics
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GH_LOGIN: ${{ github.repository_owner }}
-        run: python3 scripts/generate_profile.py
+        run: python3 scripts/generate_stats.py
 
       - name: Commit updated assets
         run: |
