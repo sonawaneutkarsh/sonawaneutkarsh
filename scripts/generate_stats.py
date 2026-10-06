@@ -264,12 +264,16 @@ def rank_languages(by_size, by_repo, n=TOP_N):
     """Rank languages for the chart.
 
     by_size: {language: bytes}; by_repo: {language: repos where it is primary}.
-    Returns (size_rows, repo_rows, total_bytes). Ties in the repo column are
+    Returns (size_rows, repo_rows, total_bytes). size_rows ends with an
+    "Other" row for everything outside the top n. Ties in the repo column are
     broken by total bytes, then name, so larger languages are not dropped by
     alphabetical order.
     """
     total = sum(by_size.values())
     size_rows = sorted(by_size.items(), key=lambda kv: (-kv[1], kv[0]))[:n]
+    rest = total - sum(v for _, v in size_rows)
+    if rest > 0:
+        size_rows.append(("Other", rest))  # so the shares visibly add up to 100%
     repo_rows = sorted(
         by_repo.items(), key=lambda kv: (-kv[1], -by_size.get(kv[0], 0), kv[0])
     )[:n]

@@ -15,8 +15,10 @@ class LanguageChartTests(unittest.TestCase):
         rows, _, total = gs.rank_languages(by_size, {}, n=5)
         self.assertEqual(total, 100)
         self.assertEqual([n for n, _ in rows],
-                         ["Python", "Swift", "Jupyter Notebook", "Shell", "JavaScript"])
+                         ["Python", "Swift", "Jupyter Notebook", "Shell", "JavaScript", "Other"])
         self.assertEqual(gs.format_share(rows[0][1], total), "56%")
+        self.assertEqual(rows[-1], ("Other", 3))
+        self.assertEqual(sum(v for _, v in rows), total)
 
     def test_small_share_is_not_shown_as_zero(self):
         self.assertEqual(gs.format_share(1, 1000), "<1%")
