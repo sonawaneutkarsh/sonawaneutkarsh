@@ -20,7 +20,7 @@ right now, i'm going deeper into LLM systems, backend infrastructure, and system
 
 <img src="./assets/generated/hd-stack.svg" width="620" alt="stack"/>
 
-<samp>python &nbsp; typescript &nbsp; javascript &nbsp; swift &nbsp; c++ &nbsp; postgresql &nbsp; pgvector &nbsp; fastapi &nbsp; node &nbsp; docker &nbsp; linux &nbsp; git</samp>
+<samp>python &nbsp; swift &nbsp; javascript &nbsp; typescript &nbsp; sql &nbsp; fastapi &nbsp; postgresql &nbsp; pgvector &nbsp; node.js &nbsp; swiftui &nbsp; github actions &nbsp; linux &nbsp; git</samp>
 
 <img src="./assets/generated/hd-projects.svg" width="620" alt="projects"/>
 
