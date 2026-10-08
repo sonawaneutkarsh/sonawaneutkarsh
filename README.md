@@ -12,11 +12,11 @@
 
 <img src="./assets/generated/hd-about.svg" width="620" alt="about"/>
 
-i'm an honors CS student at penn state, and i like building software around problems i actually have — systems i can use every day rather than one-off demos.
+I'm an honors CS student at Penn State, and I like building software around problems I actually have — systems I can use every day.
 
-Nytr started from one of those problems: penn state dining changes every day, but nutrition and training targets don't. i built it to combine Stacks Market availability, HealthKit data, food logs, and training history into deterministic daily guidance.
+Nytr started from one of those problems: Penn State dining changes every day, but nutrition and training targets don't. I built it to combine Stacks Market availability, HealthKit data, food logs, and training history into deterministic daily guidance.
 
-right now, i'm going deeper into LLM systems, backend infrastructure, and systems/performance engineering.
+Right now, I'm going deeper into LLM systems, backend infrastructure, and systems/performance engineering.
 
 <img src="./assets/generated/hd-stack.svg" width="620" alt="stack"/>
 
@@ -28,18 +28,24 @@ right now, i'm going deeper into LLM systems, backend infrastructure, and system
 Evidence-driven decision system built around Penn State Harrisburg's Stacks Market. Combines daily dining availability with HealthKit, food logs, and Hevy training history to produce deterministic meal and training guidance in a native iOS app. 1,135 backend tests (1,124 passing in CI with Postgres) · 251 iOS XCTest cases.
 
 **[Talks](https://github.com/sonawaneutkarsh/Talks)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/talks/) &nbsp;·&nbsp; <samp>swift, swiftui, watchos, ios · 2026</samp><br>
-Apple Watch meeting recorder. Durable Watch-to-iPhone file transfer, on-device transcription and Apple Foundation Models summaries, then sync to Notion. 57 XCTest cases passing in CI (iOS Simulator), plus a watchOS build.
+Apple Watch meeting recorder with durable Watch-to-iPhone transfer, on-device transcription and Apple Foundation Models summaries, and Notion sync. 57 XCTest cases pass in CI on the iOS Simulator; CI also builds the watchOS app.
 
-**[Clage](https://github.com/sonawaneutkarsh/Clage)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/clage/) &nbsp;·&nbsp; <samp>python, algorithms from scratch · 2026</samp><br>
-Neuroevolution of Augmenting Topologies (NEAT) implemented from first principles, driving organisms in a 2D simulation world. No ML libraries (matplotlib is the only runtime dependency). 300 tests, passing in CI. Over 5 fixed seeds it solves OR and AND every time and XOR 4 of 5; sine regression is not solved yet.
+**[Clage](https://github.com/sonawaneutkarsh/Clage)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/clage/) &nbsp;·&nbsp; <samp>python, javascript, neat, fastapi · 2026</samp><br>
+From-scratch NEAT engine evolving autonomous neural agents in a 2D ecosystem. Built Clage Studio, a browser workbench with live visualization, neural-network inspection, evolutionary lineage, deterministic replay, and reproducible experiments. 429 Python tests plus JavaScript and browser coverage; OR/AND/XOR each solved across all five documented benchmark seeds using minimal initialization.
 
 **[Devvy](https://github.com/sonawaneutkarsh/devvy)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/devvy/) &nbsp;·&nbsp; <samp>javascript (node.js), discord ipc, devtools · 2026</samp><br>
-Local daemon for coordinating Discord Rich Presence across developer tools. Speaks Discord's IPC protocol directly with arbitration, TTL expiry, heartbeats, and reconnect handling. 26 test scripts, all run in CI; releases publish only after CI passes. Released for macOS; Windows support is on `main`, not released yet.
+Local Discord Rich Presence daemon unifying VS Code, OpenCode, and Command Code. Implements Discord IPC directly, with source arbitration, heartbeat-based liveness, TTL expiry, automatic reconnection, and privacy-conscious activity metadata. Packaged for macOS with a managed background lifecycle.
 
 **ScholarAI** &nbsp;·&nbsp; [team repo](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI) &nbsp;·&nbsp; [my pipeline](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI/tree/main/data-engineering) &nbsp;·&nbsp; <samp>python, postgresql, pgvector · jun 2026</samp><br>
-Government-scheme discovery platform built by a 5-person team at the USAII Global AI Hackathon 2026; our team was a finalist among 6,081+ participants. My part was the data engineering: normalization, embeddings, and PostgreSQL/pgvector ingestion for 1,008 scraped schemes.
+Government-scheme discovery platform built by a 5-person team at the USAII Global AI Hackathon 2026; our team was a finalist among 6,081+ participants. My part was the data engineering: normalization, embeddings, and PostgreSQL/pgvector ingestion for 1,007 scraped schemes.
 
-**Also:** [MedClarity](https://github.com/sonawaneutkarsh/MedClarity) — ask questions across medical PDFs; one Gemini request per question with page-level citations checked against the loaded documents; 66 Vitest unit tests passing in CI · 2026. [PyOpt](https://github.com/sonawaneutkarsh/pyopt-slm-exp) — LoRA fine-tuning of Qwen3-4B to speed up Python functions (Sep 2026). Published v1.1 run: faster rewrites 29/40 → 36/40, but 13 of the 40 test prompts leaked from training, so it is not a clean held-out result; the split is fixed in v1.2 and the model is not retrained yet.
+**Also:**
+
+- **[MedClarity](https://github.com/sonawaneutkarsh/MedClarity)** &nbsp;·&nbsp; <samp>typescript, react, gemini · 2026</samp><br>
+  Medical PDF question answering across multiple documents, with Gemini-backed answers, clickable page-level citations, and a cross-document timeline. Citation checks make sources inspectable; they do not validate the model's claims. 66 Vitest tests.
+
+- **[PyOpt](https://github.com/sonawaneutkarsh/pyopt-slm-exp)** &nbsp;·&nbsp; <samp>python, qwen3-4b, lora · sep 2026</samp><br>
+  LoRA fine-tuning of Qwen3-4B for Python code optimization, with executable correctness and performance evaluation, seeded dataset generation, and train/test leakage checks. The published v1.1 split had 13 overlapping prompts out of 40; v1.2 fixes the split, but the model has not been retrained on it.
 
 <img src="./assets/generated/hd-languages.svg" width="620" alt="languages"/>
 
