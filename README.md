@@ -18,6 +18,8 @@ Nytr started from one of those problems: Penn State dining changes every day, bu
 
 Right now, I'm going deeper into LLM systems, backend infrastructure, and systems/performance engineering.
 
+**Looking for Summer 2027 software engineering and AI/ML internships.**
+
 <img src="./assets/generated/hd-stack.svg" width="620" alt="stack"/>
 
 <samp>python &nbsp; swift &nbsp; javascript &nbsp; typescript &nbsp; sql &nbsp; fastapi &nbsp; postgresql &nbsp; pgvector &nbsp; node.js &nbsp; swiftui &nbsp; github actions &nbsp; linux &nbsp; git</samp>
@@ -25,7 +27,7 @@ Right now, I'm going deeper into LLM systems, backend infrastructure, and system
 <img src="./assets/generated/hd-projects.svg" width="620" alt="projects"/>
 
 **[Nytr](https://github.com/sonawaneutkarsh/Nytr)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/nytr/) &nbsp;·&nbsp; <samp>swift, python, fastapi, postgresql · 2026</samp><br>
-Evidence-driven decision system built around Penn State Harrisburg's Stacks Market. Combines daily dining availability with HealthKit, food logs, and Hevy training history to produce deterministic meal and training guidance in a native iOS app. 1,135 backend tests (1,124 passing in CI with Postgres) · 251 iOS XCTest cases.
+Evidence-driven decision system built around Penn State's Stacks Market. Combines daily dining availability with HealthKit, food logs, and Hevy training history to produce deterministic meal and training guidance in a native iOS app. 1,135 backend tests (1,124 passing in CI with Postgres) · 251 iOS XCTest cases.
 
 **[Talks](https://github.com/sonawaneutkarsh/Talks)** &nbsp;·&nbsp; [case study](https://sonawaneutkarsh.github.io/projects/talks/) &nbsp;·&nbsp; <samp>swift, swiftui, watchos, ios · 2026</samp><br>
 Apple Watch meeting recorder with durable Watch-to-iPhone transfer, on-device transcription and Apple Foundation Models summaries, and Notion sync. 57 XCTest cases pass in CI on the iOS Simulator; CI also builds the watchOS app.
@@ -46,6 +48,9 @@ Government-scheme discovery platform built by a 5-person team at the USAII Globa
 
 - **[PyOpt](https://github.com/sonawaneutkarsh/pyopt-slm-exp)** &nbsp;·&nbsp; <samp>python, qwen3-4b, lora · sep 2026</samp><br>
   LoRA fine-tuning of Qwen3-4B for Python code optimization, with executable correctness and performance evaluation, seeded dataset generation, and train/test leakage checks. The published v1.1 split had 13 overlapping prompts out of 40; v1.2 fixes the split, but the model has not been retrained on it.
+
+- **[ListCraft](https://github.com/sonawaneutkarsh/listcraft)** &nbsp;·&nbsp; <samp>python, qwen3.5-4b, lora, tinker · oct 2026</samp><br>
+  LoRA fine-tuning of Qwen3.5-4B on Tinker to write SEO-optimized Etsy listing titles from rough seller notes. 536 pairs (483 train / 53 eval): keyword coverage 0.77 → 0.93, titles in the 120–140 character sweet spot 0% → 83%, blind-judge wins 35–5. It learned listing format more than better prose, and it over-generates tags (~66 vs 13 in the reference).
 
 <img src="./assets/generated/hd-languages.svg" width="620" alt="languages"/>
 
