@@ -37,7 +37,7 @@ From-scratch NEAT engine evolving autonomous neural agents in a 2D ecosystem. Bu
 Local Discord Rich Presence daemon unifying VS Code, OpenCode, and Command Code. Implements Discord IPC directly, with source arbitration, heartbeat-based liveness, TTL expiry, automatic reconnection, and privacy-conscious activity metadata. Packaged for macOS with a managed background lifecycle.
 
 **ScholarAI** &nbsp;·&nbsp; [team repo](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI) &nbsp;·&nbsp; [my pipeline](https://github.com/faridabachir769-code/USAII_GlobalAI-Hackathon-2026_ScholarAI/tree/main/data-engineering) &nbsp;·&nbsp; <samp>python, postgresql, pgvector · jun 2026</samp><br>
-Government-scheme discovery platform built by a 5-person team at the USAII Global AI Hackathon 2026; our team was a finalist among 6,081+ participants. My part was the data engineering: normalization, embeddings, and PostgreSQL/pgvector ingestion for 1,007 scraped schemes.
+Government-scheme discovery platform built by a 5-person team at the USAII Global AI Hackathon 2026; our team was a finalist among 6,081+ participants. My part was the data engineering: normalization, embeddings, and PostgreSQL/pgvector ingestion for 1,007 loaded (1,008 scraped) schemes.
 
 **Also:**
 
